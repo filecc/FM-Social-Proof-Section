@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    ;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #502050;
+    font-weight: 700;
+    max-width: 80%;
+}
+
+.titleContainer {
+    max-width: 50%;
+    padding-right: 5rem;
+}
+
+
+header h1+p {
+    color: #937b92;
+    margin-top: 1.5rem;
+    line-height: 1.3rem;
+    font-size: 18px;
+}
+
+.titleContainer p {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+.ratingsContainer {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.rating {
+    background-color: #f7f2f7;
+    padding: 15px;
+    justify-content: flex-start;
+    width: 70%;
+    box-shadow: 0px -4px 21px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.ratingsContainer div:first-child {
+    align-self: flex-start;
+}
+
+.ratingsContainer div:last-child {
+    align-self: flex-end;
+}
+
+
+.rating p:first-child {
+    color: orange;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+.rating p:last-child {
+    font-weight: 700;
+    color: #502050;
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.cardsRow {
+    width: 100%;
+}
+
+.cardContainer {
+    width: calc(100% / 3);
+    background-color: #502050;
+    padding: 2.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+.card2 {
+    margin-top: 3rem;
+}
+
+.card3 {
+    margin-top: 6rem;
+}
+
+.cardHeader {
+    margin-bottom: 2rem;
+}
+
+.cardHeader div:first-child {
+    width: 20%;
+}
+
+.cardHeader div:last-child {
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.cardHeader div:last-child p:last-child {
+    color: #c37bc3;
+}
+
+.cardContainer :last-child {
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 850px){
+    .d-flex {
+        flex-direction: column;
+    }
+    .cardHeader{
+        flex-direction: row;
+    }
+    header {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+    .titleContainer {
+        max-width: 100%;
+        padding-right: 0;
+        padding: 2rem;
+        text-align: center;
+    }
+    .ratingsContainer {
+        width: 100%; 
+        padding: 1.5rem;
+    }
+    .rating {
+        justify-content: center;
+        width: 100%;
+        box-shadow: 0px -4px 21px -3px rgba(0, 0, 0, 0.2);
+    }
+    .cardsRow{
+        padding: 1.5rem;
+    }
+    .cardContainer {
+        width: 100%;
+        padding: 2.5rem;
+    }
+    
+    .card2 {
+        margin-top: 0;
+    }
+    
+    .card3 {
+        margin-top: 0;
+    }
+    
+}
